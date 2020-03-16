@@ -1,0 +1,4 @@
+
+1. 首先需要安装MySQLdb
+     https://pypi.org/project/mysqlclient/#files
+     下载whl文件，然后pip install安装即可
