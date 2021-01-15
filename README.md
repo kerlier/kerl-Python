@@ -81,5 +81,14 @@ list = [1, 2, 3, 4]
 newList = [x*x for x in list if x > 3]
 ```
 
+### Pandas
+
+#### loc以及iloc的区别
+
+loc[索引名]: 表示提取特定索引名的行数据。
+
+iloc[indexNumber]: indexNumber只能是数字，表示提取第indexNumber的数据
+
+
 
  

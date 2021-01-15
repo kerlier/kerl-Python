@@ -4,6 +4,7 @@
 # 引用当前文件夹下的类
 from People import people
 
+
 class Customer(people):
     customerId = ''
 

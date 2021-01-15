@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-
+# -*- coding:utf-8
 # 面向对象
 # 定义一个class
 
+
+# 默认people继承object
 class people:
     # 定义基本属性
     name = ''
@@ -16,7 +18,7 @@ class people:
         self.age = 0
         self.__weight =0
 
-    def  __init__(self, name, age, weight):
+    def __init__(self, name, age, weight):
         self.__weight = weight
         self.name = name
         self.age = age
@@ -27,11 +29,15 @@ class people:
     def getWeight(self):
         return self.__weight
 
+
 if __name__ == '__main__':
     p1 = people('yangyuguang', 23, 108)
     p2 = people('lvshuzhen', 23, 90)
+    p3 = people('yangyuguang', 23, 108)
 
-    print(p1 == p2)
+    print('isinstance:', isinstance(p1, object))
+    print('p1==p2', p1 == p2)
+    print('p2==p3', p2 == p3)
     p1.speak()
     p2.speak()
 
