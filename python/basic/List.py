@@ -29,6 +29,8 @@ print('[2:3]', list)
 
 list[2:5] = []    # 删除2-5位之间的元素
 print('[2:5]', list)
+del list[2]
+print('del:', list)
 
 
 # 翻转list
