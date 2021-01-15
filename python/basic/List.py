@@ -29,16 +29,20 @@ print('[2:3]', list)
 
 list[2:5] = []    # 删除2-5位之间的元素
 print('[2:5]', list)
-del list[2]
+del list[2]      # 删除list中的元素
 print('del:', list)
+
+list.reverse()
+print('reverse:', list)
 
 
 # 翻转list
 def reverseWords(input):
     intputWords = input.split(" ")
-    inputWords = intputWords[-1::-1]
+    inputWords = intputWords[-1::-1] # 反转list
     output = ' '.join(inputWords)
     return output
+
 
 if __name__ == '__main__':
     input = 'I like python'
