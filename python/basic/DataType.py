@@ -39,6 +39,8 @@ print(isinstance(a, int))
 # 加减乘除
 # 5//4 结果是一个整数
 print(5//4)
+# 5 / 4 结果是一个浮点数
+print(5/4)
 # 乘法
 print(2*5)
 # 乘方
