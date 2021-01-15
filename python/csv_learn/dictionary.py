@@ -41,16 +41,15 @@ print("output #110: {}".format(another_dict_items))
 
 # 使用for循环来遍历字典中的数据
 for key, value in another_dict_items:
-    print("key: {}, value:{}".format(key,value))
+    print("key: {}, value:{}".format(key, value))
 
 
 # 使用字典的中in
-
-print('t' in another_dict)
+print('dict:', another_dict)
+print('in', 'x' in another_dict)
 
 # 使用get获取参数值
+print("x 's value in dict is {}".format(another_dict.get('x')))
+print("y 's value in dict is {}".format(another_dict.get('y')))
 
-print("x's value in dict is {}".format(another_dict.get('x')))
-print("y's value in dict is {}".format(another_dict.get('y')))
-
-print("c's value in dict is {}".format(another_dict.get('c')))
+print("c 's value in dict is {}".format(another_dict.get('c')))

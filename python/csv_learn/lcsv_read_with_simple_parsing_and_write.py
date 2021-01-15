@@ -8,7 +8,7 @@ input_file = '../csv_data/input.csv'
 output_file = '../csv_data/output.csv'
 
 with open(input_file, 'r', newline='', encoding='utf8') as filereader:
-    with open(output_file, 'w', newline='',encoding='utf8') as filewriter:
+    with open(output_file, 'w', newline='', encoding='utf8') as filewriter:
         header = filereader.readline()  # readline先读取第一行 ,header
         print("original header is {}".format(header))
         header = header.strip()

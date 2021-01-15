@@ -15,7 +15,7 @@ import os
 
 inputPath = '../glob_txt'
 
-for input_file in glob.glob(os.path.join(inputPath, '*.csv')):
+for input_file in glob.glob(os.path.join(inputPath, '*.txt')):
     with open(input_file, 'r') as input_file_reader:
         for row in input_file_reader:
             print("output #138 {}".format(row))

@@ -16,11 +16,8 @@ filereader = open(input_file, 'r')
 # 直接使用for循环来获取文本的内容
 
 for line in filereader:
-
-    # print(line is None)
-    # print(len(line))
     if line is not None and line.strip() != '' and len(line) != 0:
-        print("output #136:{}".format(line))
+        print("output #136:{}".format(line), end='')
 
 
 # 最后都要关闭filereader

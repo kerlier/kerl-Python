@@ -1,4 +1,6 @@
+# coding:utf-8
 #!/usr/bin/env python3
+
 
 import sys
 # 这里使用sys模块来获取系统变量,方法是sys.argv[index]

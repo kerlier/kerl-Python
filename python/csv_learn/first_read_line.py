@@ -7,7 +7,6 @@ input_file = '../txt/learn_sys.txt'
 
 with open(input_file, 'r') as filereader:
 
-
     row1 = filereader.readline()
     row2 = filereader.readline()
     row3 = filereader.readline()
@@ -26,7 +25,7 @@ with open(input_file, 'r') as filereader:
 
 with open(input_file, 'r') as filereader:
     first_row = filereader.readline()
-    # readlien之后, 再执行filereader for循环中的数据是剩下的line
+    # readline之后, 再执行filereader for循环中的数据是剩下的line
     print(first_row)
     print("=============")
     for row in filereader:
