@@ -80,7 +80,15 @@ newList = [x*x for x in oldList if condition..]
 list = [1, 2, 3, 4]
 newList = [x*x for x in list if x > 3]
 ```
+#### 括号(Bracket)区别：
+在Python中,小括号表示tuple, 中括号表示list
+```python
+a = (5) # a的类型是int, 跟a=5没什么区别
+a = (5, ) # a的类型是tuple
 
+a = [5] # a的类型是list
+a = [5, 5] # a的类型是List
+```
 ### Pandas
 
 #### loc以及iloc的区别
@@ -163,10 +171,18 @@ childDataFrame = pd.DataFrame(parentDataFrame, index=['a', 'b'], columns=['one',
 ####  Numpy
 
 ##### zeros
-创建数据都是0的n维数组。dtype默认是float64.
+创建数据都是0的n维数组。dtype默认是float64. 需要传入一个shape。tuple或list
 ```python
 # 创建2维3列的数组
 np = np.zeros([2, 3], dtype=np.int)
+```
+
+
+##### ones
+创建数据都是1的n维数组。dtype默认是float64. 需要传入一个shape。tuple或list
+```python
+# 创建2维3列的数组
+np = np.ones([2, 3], dtype=np.int)
 ```
 
 
