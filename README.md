@@ -119,6 +119,29 @@ DataFrame可以插入多列。
 ```python
 for col in file_dataFrame.columns:
     series1 = file_dataFrame[col]
+
+```
+
+###### 创建DataFrame的方式
+```python
+
+# 1. Series字典   
+# Key作为column, series数组作为列,series数组索引作为dataFrame的列索引
+# Series数组的长度可以不同
+
+data = {'one': pd.Series([1, 2, 3], index=['a', 'b', 'c']),
+        'two': pd.Series((1, 2, 3, 4), index=['a', 'b', 'c', 'd'])}
+d = pd.DataFrame(data)
+
+
+
+# 2. Python字典
+# key作为DataFrame中的column, 数组作为每列的值
+# 数组的长度必须一致
+data = {'one': [1, 2, 3, 4],
+        'two': [10, 20, 30, 40]}
+d = pd.DataFrame(data)
+
 ```
 ###### Index(行)
 
