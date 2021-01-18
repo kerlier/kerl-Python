@@ -42,3 +42,15 @@ print('dataFrame created by Python dictionary:', d)
 d1 = pd.DataFrame(data, index=['a', 'b', 'c', 'd'])
 print('dataFrame created by Python dictionary with index:', d1)
 
+
+'''
+3. 列表字典
+'''
+# 使用列表字典创建DataFrame
+# key作为dataFrame的column
+# index: 没有指定index时,取值为range(n),指定索引时，长度需要跟列表字典的长度一致
+data = [{'a': 1, 'b': 2, 'c': 3}, {'a': 20, 'b': 30, 'e': 40}]
+d1 = pd.DataFrame(data)
+print('dataFrame created by list of dictionary:', d1)
+d2 = pd.DataFrame(data, index=['a', 'b'])
+print('dataFrame created by list of dictionary:', d2)
