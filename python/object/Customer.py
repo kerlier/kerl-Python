@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding:utf-8
 
 # python可以实现继承
 # 引用当前文件夹下的类
@@ -23,7 +24,7 @@ class Customer(people):
 
 
 if __name__ == '__main__':
-    c = Customer("yang",10, 102, "001")
+    c = Customer("yang", 10, 102, "001")
     print(c.name)
     print(c.customerId)
     print(c.age)

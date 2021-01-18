@@ -160,6 +160,15 @@ childDataFrame = pd.DataFrame(parentDataFrame, index=['a', 'b'], columns=['one',
 异构： 由不同元素或部分组成。
 
 
+####  Numpy
+
+##### zeros
+创建数据都是0的n维数组。dtype默认是float64.
+```python
+# 创建2维3列的数组
+np = np.zeros([2, 3], dtype=np.int)
+```
+
 
 
 
