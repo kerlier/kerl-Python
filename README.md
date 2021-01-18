@@ -89,6 +89,55 @@ loc[索引名]: 表示提取特定索引名的行数据。
 
 iloc[indexNumber]: indexNumber只能是数字，表示提取第indexNumber的数据
 
+#### Series(一维数据)
+
+pandas中类似于一维数据的对象。
+Series对象的长度是不可以改变的。
+
+Series可储存数据类型：可储存整数，浮点，字符串以及Python对象等类型。
+轴标签称为索引。
+
+
+```python
+# 创建Series
+s = pd.Series(data, index=index)
+# data支持的数据类型: 1 Python字典 2 多维数组 3 标量值(如 5)
+# index必须跟data的长度一致
+```
+
+
+#### DataFrame(二维数据)
+
+DataFrame有行索引以及列索引.
+是一个表格型的数据结构。
+可由多个series组成。
+DataFrame可以插入多列。
+
+###### Column(列)
+
+获取dataFrame中的列。
+```python
+for col in file_dataFrame.columns:
+    series1 = file_dataFrame[col]
+```
+###### Index(行)
+
+Pandas默认会在dataFrame标上递增的序列号。也可以直接指定Index和Column.
+
+
+###### 获取子DataFrame
+
+Pandas可以通过指定index以及column,生成子DataFrame
+```python
+childDataFrame = pd.DataFrame(parentDataFrame, index=['a', 'b'], columns=['one', 'two'])
+```
+
+#### 异构
+
+异构： 由不同元素或部分组成。
+
+
+
 
 
  

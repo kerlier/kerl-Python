@@ -19,6 +19,6 @@ data_frame = pd.read_csv(input_file)
 data_frame['Cost'] = data_frame['Cost'].str.strip("$").astype(float)
 
 #
-data_frame_value_meet_condition = data_frame.loc[(data_frame['Supplier Name'].str.contains('Y')) & (data_frame['Cost']> 200),:]
+data_frame_value_meet_condition = data_frame.loc[(data_frame['Supplier Name'].str.contains('Y')) & (data_frame['Cost']> 200)]
 
 data_frame_value_meet_condition.to_csv(output_file,index=False)
